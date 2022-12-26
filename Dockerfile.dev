@@ -8,7 +8,4 @@ RUN npm install
 
 COPY . .
 
-RUN chmod -Rf 777 '/app'
-RUN chown -Rf node:node '/app/node_modules'
-
 CMD ["npm","run","start"]
